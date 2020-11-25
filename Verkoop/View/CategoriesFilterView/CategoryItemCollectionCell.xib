@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryItemCollectionCell" id="gTV-IL-0wX" customClass="CategoryItemCollectionCell" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_2" translatesAutoresizingMaskIntoConstraints="NO" id="0Gg-dX-jl9">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="127"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Men's Wear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVJ-O0-NB4">
+                        <rect key="frame" x="14" y="96" width="95.5" height="21"/>
+                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="KVJ-O0-NB4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="14" id="3qA-oL-yKZ"/>
+                <constraint firstAttribute="bottom" secondItem="KVJ-O0-NB4" secondAttribute="bottom" constant="10" id="64O-1F-4WZ"/>
+                <constraint firstAttribute="bottom" secondItem="0Gg-dX-jl9" secondAttribute="bottom" id="6YP-MA-fio"/>
+                <constraint firstItem="0Gg-dX-jl9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7gk-hc-Qdd"/>
+                <constraint firstAttribute="trailing" secondItem="0Gg-dX-jl9" secondAttribute="trailing" id="jVo-sh-gAf"/>
+                <constraint firstItem="0Gg-dX-jl9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="r2Y-yU-LsN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="140" height="127"/>
+            <connections>
+                <outlet property="imageCategoryItem" destination="0Gg-dX-jl9" id="BWx-5m-e1R"/>
+                <outlet property="labelItemName" destination="KVJ-O0-NB4" id="TiP-f4-cWd"/>
+            </connections>
+            <point key="canvasLocation" x="128" y="13.943028485757123"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pic_2" width="160" height="149"/>
+    </resources>
+</document>

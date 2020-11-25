@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHIC.TTF">
+            <string>CenturyGothic</string>
+        </array>
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MakeOfferView" id="iN0-l3-epB" customClass="MakeOfferView" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVP-x9-MVG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdC-Qu-UkL">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4oP-vr-L8C"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                    <state key="normal" title="Make Offer">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="makeOfferButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="nrn-WW-yct"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ba9-gv-Gbc">
+                    <rect key="frame" x="0.0" y="463" width="320" height="55"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.0   " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M4D-OM-o4e">
+                            <rect key="frame" x="260" y="8" width="44" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="LPq-y9-nOG"/>
+                            </constraints>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are offering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxL-PN-hN3">
+                            <rect key="frame" x="16" y="8" width="132" height="39"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQH-lc-13p">
+                            <rect key="frame" x="247" y="8" width="10" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="BDP-pG-wyS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="M4D-OM-o4e" secondAttribute="bottom" constant="8" id="1BK-Hb-7K7"/>
+                        <constraint firstItem="M4D-OM-o4e" firstAttribute="width" relation="lessThanOrEqual" secondItem="Ba9-gv-Gbc" secondAttribute="width" multiplier="0.4" id="1fb-wI-3p8"/>
+                        <constraint firstItem="OxL-PN-hN3" firstAttribute="top" secondItem="Ba9-gv-Gbc" secondAttribute="top" constant="8" id="4oN-yP-3Ga"/>
+                        <constraint firstItem="OxL-PN-hN3" firstAttribute="leading" secondItem="Ba9-gv-Gbc" secondAttribute="leading" constant="16" id="7fe-oO-iVS"/>
+                        <constraint firstItem="M4D-OM-o4e" firstAttribute="top" secondItem="Ba9-gv-Gbc" secondAttribute="top" constant="8" id="7lJ-iW-reL"/>
+                        <constraint firstAttribute="trailing" secondItem="M4D-OM-o4e" secondAttribute="trailing" constant="16" id="9vL-8K-vhw"/>
+                        <constraint firstAttribute="bottom" secondItem="OxL-PN-hN3" secondAttribute="bottom" constant="8" id="BW3-H2-o3X"/>
+                        <constraint firstItem="zQH-lc-13p" firstAttribute="bottom" secondItem="M4D-OM-o4e" secondAttribute="bottom" id="CYA-Bc-Uwm"/>
+                        <constraint firstAttribute="height" constant="55" id="RAl-Y2-MkH"/>
+                        <constraint firstItem="M4D-OM-o4e" firstAttribute="leading" secondItem="zQH-lc-13p" secondAttribute="trailing" constant="3" id="bzq-xh-K0a"/>
+                        <constraint firstItem="zQH-lc-13p" firstAttribute="top" secondItem="M4D-OM-o4e" secondAttribute="top" id="rcz-ls-yXN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qdC-Qu-UkL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BUb-AX-BNL"/>
+                <constraint firstItem="yVP-x9-MVG" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="MQH-Vp-S7E"/>
+                <constraint firstItem="Ba9-gv-Gbc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OHu-la-gg6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qdC-Qu-UkL" secondAttribute="trailing" id="Rb4-zk-RGe"/>
+                <constraint firstItem="qdC-Qu-UkL" firstAttribute="top" secondItem="Ba9-gv-Gbc" secondAttribute="bottom" id="RpC-gr-PoO"/>
+                <constraint firstItem="yVP-x9-MVG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SzN-xA-9FP"/>
+                <constraint firstItem="yVP-x9-MVG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="W56-Xr-zln"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qdC-Qu-UkL" secondAttribute="bottom" id="b89-hS-wsc"/>
+                <constraint firstItem="yVP-x9-MVG" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="jhN-vl-WLb"/>
+                <constraint firstItem="Ba9-gv-Gbc" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="mbm-jt-3zf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="blurView" destination="yVP-x9-MVG" id="kcj-Pi-OrZ"/>
+                <outlet property="bottomContraint" destination="RpC-gr-PoO" id="pnu-n4-gyB"/>
+                <outlet property="buttonBottomConstraint" destination="b89-hS-wsc" id="X00-9I-Olu"/>
+                <outlet property="makeOfferButton" destination="qdC-Qu-UkL" id="U8b-f8-HCw"/>
+                <outlet property="priceField" destination="M4D-OM-o4e" id="H2n-zp-XCl"/>
+            </connections>
+            <point key="canvasLocation" x="136.875" y="123.59154929577466"/>
+        </view>
+    </objects>
+</document>

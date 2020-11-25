@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TableCellShare" rowHeight="56" id="KGk-i7-Jjw" customClass="TableCellShare" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGz-wq-ebC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jF-uv-hxC">
+                                <rect key="frame" x="20" y="17" width="49.5" height="22"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhu-zo-iRp">
+                                <rect key="frame" x="260" y="8" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RVh-2n-LuO"/>
+                                    <constraint firstAttribute="width" constant="40" id="zDH-Y5-XM4"/>
+                                </constraints>
+                                <state key="normal" image="share"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juK-ex-mOZ">
+                                <rect key="frame" x="215" y="8" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5jS-na-teF"/>
+                                    <constraint firstAttribute="width" constant="40" id="GUm-UD-51h"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                                <state key="normal" image="facebook"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHG-0d-aZ2">
+                                <rect key="frame" x="167" y="8" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ATE-QT-IoS"/>
+                                    <constraint firstAttribute="height" constant="40" id="w74-y3-DxZ"/>
+                                </constraints>
+                                <state key="normal" image="whatsapp"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mhu-zo-iRp" firstAttribute="centerY" secondItem="JGz-wq-ebC" secondAttribute="centerY" id="1nj-nc-FtU"/>
+                            <constraint firstItem="9jF-uv-hxC" firstAttribute="leading" secondItem="JGz-wq-ebC" secondAttribute="leading" constant="20" id="801-nl-Jpd"/>
+                            <constraint firstItem="juK-ex-mOZ" firstAttribute="centerY" secondItem="mhu-zo-iRp" secondAttribute="centerY" id="GZY-LY-50w"/>
+                            <constraint firstItem="juK-ex-mOZ" firstAttribute="leading" secondItem="dHG-0d-aZ2" secondAttribute="trailing" constant="8" id="UjW-ua-3T2"/>
+                            <constraint firstItem="9jF-uv-hxC" firstAttribute="centerY" secondItem="JGz-wq-ebC" secondAttribute="centerY" id="UkT-Yx-KLy"/>
+                            <constraint firstAttribute="trailing" secondItem="mhu-zo-iRp" secondAttribute="trailing" constant="20" id="Ukx-W6-R01"/>
+                            <constraint firstItem="dHG-0d-aZ2" firstAttribute="centerY" secondItem="juK-ex-mOZ" secondAttribute="centerY" id="nu3-q3-eS6"/>
+                            <constraint firstItem="mhu-zo-iRp" firstAttribute="leading" secondItem="juK-ex-mOZ" secondAttribute="trailing" constant="5" id="uhR-dG-4nk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JGz-wq-ebC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="70e-Al-SD7"/>
+                    <constraint firstAttribute="bottom" secondItem="JGz-wq-ebC" secondAttribute="bottom" id="LOf-c4-kjZ"/>
+                    <constraint firstItem="JGz-wq-ebC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eVi-a1-0cP"/>
+                    <constraint firstAttribute="trailing" secondItem="JGz-wq-ebC" secondAttribute="trailing" id="nYa-dm-VSN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="defaultShareButton" destination="mhu-zo-iRp" id="JyZ-fQ-w5D"/>
+                <outlet property="facebookShareButton" destination="juK-ex-mOZ" id="xd9-bk-3Qi"/>
+                <outlet property="whatsappShareButton" destination="dHG-0d-aZ2" id="djD-Yg-iW9"/>
+            </connections>
+            <point key="canvasLocation" x="-102" y="85"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="facebook" width="50" height="50"/>
+        <image name="share" width="26" height="26"/>
+        <image name="whatsapp" width="26" height="26"/>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHIC.TTF">
+            <string>CenturyGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriesHeader" id="U6b-Vx-4bR" customClass="CategoriesHeader" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HpY-7Z-wIs">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ru3-LJ-yRQ">
+                            <rect key="frame" x="20" y="36" width="46" height="21"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                            <color key="textColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.67000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ru3-LJ-yRQ" firstAttribute="leading" secondItem="HpY-7Z-wIs" secondAttribute="leading" constant="20" id="OZJ-kf-iPX"/>
+                        <constraint firstItem="Ru3-LJ-yRQ" firstAttribute="centerY" secondItem="HpY-7Z-wIs" secondAttribute="centerY" id="iQU-yg-O5G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="HpY-7Z-wIs" secondAttribute="bottom" id="DyL-Vi-aBn"/>
+                <constraint firstItem="HpY-7Z-wIs" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="VS0-02-wuR"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="HpY-7Z-wIs" secondAttribute="trailing" id="imW-cT-dWf"/>
+                <constraint firstItem="HpY-7Z-wIs" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="vAx-Zw-Gl9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="labelCategoryName" destination="Ru3-LJ-yRQ" id="BVi-SU-HNQ"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="150.67466266866569"/>
+        </collectionReusableView>
+    </objects>
+</document>

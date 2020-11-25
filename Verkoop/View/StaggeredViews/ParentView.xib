@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHIC.TTF">
+            <string>CenturyGothic</string>
+        </array>
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ParentView" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="163"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Men's Fashion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="097-Qr-qCv">
+                    <rect key="frame" x="10" y="10" width="275" height="33"/>
+                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNy-eA-jgh">
+                    <rect key="frame" x="10" y="10" width="275" height="33"/>
+                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eEb-Cq-WcH">
+                    <rect key="frame" x="0.0" y="53" width="295" height="110"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.90196078430000004" green="0.13725490200000001" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eEb-Cq-WcH" firstAttribute="top" secondItem="097-Qr-qCv" secondAttribute="bottom" constant="10" id="0Zd-fq-6OS"/>
+                <constraint firstItem="097-Qr-qCv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="1Nz-4J-HYY"/>
+                <constraint firstItem="KNy-eA-jgh" firstAttribute="leading" secondItem="097-Qr-qCv" secondAttribute="leading" id="9Wb-py-62X"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="097-Qr-qCv" secondAttribute="trailing" constant="10" id="BLZ-Gr-csS"/>
+                <constraint firstItem="eEb-Cq-WcH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IbP-9X-dV2"/>
+                <constraint firstItem="097-Qr-qCv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="NMS-yu-kAG"/>
+                <constraint firstItem="KNy-eA-jgh" firstAttribute="trailing" secondItem="097-Qr-qCv" secondAttribute="trailing" id="YTj-oM-4nt"/>
+                <constraint firstItem="KNy-eA-jgh" firstAttribute="top" secondItem="097-Qr-qCv" secondAttribute="top" id="ktH-OM-VcJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eEb-Cq-WcH" secondAttribute="bottom" id="tmf-gF-GrI"/>
+                <constraint firstItem="KNy-eA-jgh" firstAttribute="bottom" secondItem="097-Qr-qCv" secondAttribute="bottom" id="vLZ-hs-pUy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eEb-Cq-WcH" secondAttribute="trailing" id="vM0-WK-tBT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="buttonCategory" destination="KNy-eA-jgh" id="I30-9s-o40"/>
+                <outlet property="labelHeader" destination="097-Qr-qCv" id="EJn-fx-R0q"/>
+                <outlet property="stackView" destination="eEb-Cq-WcH" id="wwf-so-NDa"/>
+            </connections>
+            <point key="canvasLocation" x="100" y="-94.002998500749626"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHIC.TTF">
+            <string>CenturyGothic</string>
+        </array>
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddMoneyPopup" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oe-sC-HIz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7c-5q-hex">
+                    <rect key="frame" x="31" y="900" width="352" height="271"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcT-l6-Un2">
+                            <rect key="frame" x="8" y="8" width="103" height="50"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                            <color key="textColor" red="0.90196078430000004" green="0.21192848929999999" blue="0.1141035245" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFv-Y7-PxE">
+                            <rect key="frame" x="105.5" y="209" width="141" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="yGs-1F-Zzg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="9up-hd-jae"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uft-cL-AJ5">
+                            <rect key="frame" x="105.5" y="149" width="141" height="50"/>
+                            <color key="backgroundColor" red="0.90196078430000004" green="0.21192848929999999" blue="0.1141035245" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                            <state key="normal" title="Proceed">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="proceedButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="86p-51-a4a"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3X-Oi-Sfl">
+                            <rect key="frame" x="8" y="66" width="336" height="75"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qk5-zq-Z87">
+                                    <rect key="frame" x="12" y="66" width="312" height="1"/>
+                                    <color key="backgroundColor" red="0.792156862745098" green="0.792156862745098" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="fwo-yd-XxS"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCW-Lb-M3w">
+                                    <rect key="frame" x="39.5" y="24" width="1" height="30"/>
+                                    <color key="backgroundColor" red="0.79215686269999996" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="Nct-dH-y5o"/>
+                                        <constraint firstAttribute="height" constant="30" id="hNz-4G-PMp"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mLN-1s-eua">
+                                    <rect key="frame" x="48.5" y="20" width="217.5" height="38"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUM-at-7Rx">
+                                    <rect key="frame" x="16" y="20" width="15.5" height="38"/>
+                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSR-hb-nGQ">
+                                    <rect key="frame" x="274" y="31.5" width="46" height="15"/>
+                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="12"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="xSR-hb-nGQ" firstAttribute="centerY" secondItem="qUM-at-7Rx" secondAttribute="centerY" id="8kO-3U-u0b"/>
+                                <constraint firstItem="qUM-at-7Rx" firstAttribute="leading" secondItem="T3X-Oi-Sfl" secondAttribute="leading" constant="16" id="E33-6I-ufh"/>
+                                <constraint firstItem="qk5-zq-Z87" firstAttribute="top" secondItem="qUM-at-7Rx" secondAttribute="bottom" constant="8" id="EIu-86-clr"/>
+                                <constraint firstItem="KCW-Lb-M3w" firstAttribute="centerY" secondItem="qUM-at-7Rx" secondAttribute="centerY" id="JJ3-YJ-PmC"/>
+                                <constraint firstItem="qk5-zq-Z87" firstAttribute="leading" secondItem="T3X-Oi-Sfl" secondAttribute="leading" constant="12" id="Me9-mN-1sY"/>
+                                <constraint firstAttribute="trailing" secondItem="xSR-hb-nGQ" secondAttribute="trailing" constant="16" id="OkN-Mt-adO"/>
+                                <constraint firstItem="xSR-hb-nGQ" firstAttribute="leading" secondItem="mLN-1s-eua" secondAttribute="trailing" constant="8" id="P23-Vy-ObI"/>
+                                <constraint firstItem="mLN-1s-eua" firstAttribute="top" secondItem="T3X-Oi-Sfl" secondAttribute="top" constant="20" id="QjG-VQ-f1H"/>
+                                <constraint firstItem="KCW-Lb-M3w" firstAttribute="leading" secondItem="qUM-at-7Rx" secondAttribute="trailing" constant="8" id="bB9-tW-QPl"/>
+                                <constraint firstItem="qUM-at-7Rx" firstAttribute="top" secondItem="T3X-Oi-Sfl" secondAttribute="top" constant="20" id="bgx-cG-mNu"/>
+                                <constraint firstAttribute="trailing" secondItem="qk5-zq-Z87" secondAttribute="trailing" constant="12" id="gcg-9d-acJ"/>
+                                <constraint firstAttribute="bottom" secondItem="qk5-zq-Z87" secondAttribute="bottom" constant="8" id="mbs-a5-dIg"/>
+                                <constraint firstItem="mLN-1s-eua" firstAttribute="leading" secondItem="KCW-Lb-M3w" secondAttribute="trailing" constant="8" id="vfp-UJ-uCX"/>
+                                <constraint firstItem="qk5-zq-Z87" firstAttribute="top" secondItem="mLN-1s-eua" secondAttribute="bottom" constant="8" id="xHO-ZO-ZWn"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Uft-cL-AJ5" firstAttribute="height" secondItem="CFv-Y7-PxE" secondAttribute="height" id="1sC-0T-WOx"/>
+                        <constraint firstItem="T3X-Oi-Sfl" firstAttribute="leading" secondItem="m7c-5q-hex" secondAttribute="leading" constant="8" id="2Rm-OP-2IS"/>
+                        <constraint firstItem="HcT-l6-Un2" firstAttribute="leading" secondItem="m7c-5q-hex" secondAttribute="leading" constant="8" id="Q5A-oY-0PA"/>
+                        <constraint firstItem="HcT-l6-Un2" firstAttribute="height" secondItem="Uft-cL-AJ5" secondAttribute="height" id="RIz-fr-KuE"/>
+                        <constraint firstItem="T3X-Oi-Sfl" firstAttribute="height" secondItem="CFv-Y7-PxE" secondAttribute="height" multiplier="1.5" id="TH3-Jd-5L6"/>
+                        <constraint firstItem="Uft-cL-AJ5" firstAttribute="centerX" secondItem="m7c-5q-hex" secondAttribute="centerX" id="YBk-CO-m38"/>
+                        <constraint firstAttribute="trailing" secondItem="T3X-Oi-Sfl" secondAttribute="trailing" constant="8" id="a1E-p3-cAx"/>
+                        <constraint firstItem="HcT-l6-Un2" firstAttribute="top" secondItem="m7c-5q-hex" secondAttribute="top" constant="8" id="fez-pJ-uFe"/>
+                        <constraint firstItem="CFv-Y7-PxE" firstAttribute="centerX" secondItem="m7c-5q-hex" secondAttribute="centerX" id="gFP-gW-3dM"/>
+                        <constraint firstItem="Uft-cL-AJ5" firstAttribute="width" secondItem="CFv-Y7-PxE" secondAttribute="width" id="hR2-L0-aW2"/>
+                        <constraint firstItem="T3X-Oi-Sfl" firstAttribute="top" secondItem="HcT-l6-Un2" secondAttribute="bottom" constant="8" id="hy8-QI-n5Q"/>
+                        <constraint firstAttribute="bottom" secondItem="CFv-Y7-PxE" secondAttribute="bottom" constant="12" id="iBa-E1-14D"/>
+                        <constraint firstItem="CFv-Y7-PxE" firstAttribute="width" secondItem="m7c-5q-hex" secondAttribute="width" multiplier="0.4" id="jTc-mb-x8n"/>
+                        <constraint firstItem="CFv-Y7-PxE" firstAttribute="top" secondItem="Uft-cL-AJ5" secondAttribute="bottom" constant="10" id="mgf-yL-c7d"/>
+                        <constraint firstItem="Uft-cL-AJ5" firstAttribute="top" secondItem="T3X-Oi-Sfl" secondAttribute="bottom" constant="8" id="yU8-6T-Zf1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="CFv-Y7-PxE" firstAttribute="height" secondItem="4oe-sC-HIz" secondAttribute="height" multiplier="0.075" priority="750" id="7o0-Dt-TN0"/>
+                <constraint firstItem="4oe-sC-HIz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Aaf-UE-cQA"/>
+                <constraint firstItem="m7c-5q-hex" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.85" id="C42-8g-jpf"/>
+                <constraint firstItem="m7c-5q-hex" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="900" id="IbZ-pz-S1A"/>
+                <constraint firstItem="m7c-5q-hex" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SRu-ZK-CAU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4oe-sC-HIz" secondAttribute="trailing" id="lnu-GC-bsn"/>
+                <constraint firstItem="4oe-sC-HIz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oo9-5p-Fua"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4oe-sC-HIz" secondAttribute="bottom" id="vAe-RZ-hmk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="amountField" destination="mLN-1s-eua" id="gf6-XI-6hy"/>
+                <outlet property="blurView" destination="4oe-sC-HIz" id="XLr-li-snn"/>
+                <outlet property="containerView" destination="m7c-5q-hex" id="gND-IK-IiC"/>
+                <outlet property="proceedButton" destination="Uft-cL-AJ5" id="iFl-q0-ka5"/>
+                <outlet property="topConstraint" destination="IbZ-pz-S1A" id="GAK-gU-F4I"/>
+            </connections>
+            <point key="canvasLocation" x="46.875" y="33.802816901408448"/>
+        </view>
+    </objects>
+</document>

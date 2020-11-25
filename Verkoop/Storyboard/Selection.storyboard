@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHIC.TTF">
+            <string>CenturyGothic</string>
+        </array>
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Select CategoryVC-->
+        <scene sceneID="MuH-GU-5Zd">
+            <objects>
+                <viewController storyboardIdentifier="SelectCategoryVC" id="Bsl-kJ-5Tg" customClass="SelectCategoryVC" customModule="Verkoop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sUb-g9-3Ec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pick_option" translatesAutoresizingMaskIntoConstraints="NO" id="FmM-np-Vmp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select any" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWX-sj-Pn9">
+                                <rect key="frame" x="20" y="88" width="97" height="23.5"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="19"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Three Categories" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeR-o3-WLQ">
+                                <rect key="frame" x="20" y="121.5" width="222" height="33.5"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected : " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uit-mg-m1V">
+                                <rect key="frame" x="20" y="170" width="77.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYV-ei-7N8">
+                                <rect key="frame" x="321" y="40" width="34" height="33"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonSkipTappedWithSender:" destination="Bsl-kJ-5Tg" eventType="touchUpInside" id="zbe-Mo-Vw3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="die-F4-a3j">
+                                <rect key="frame" x="125.5" y="587" width="124" height="50"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.13725490200000001" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Nr-GL-pMf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonNextTappedWithSender:" destination="Bsl-kJ-5Tg" eventType="touchUpInside" id="BRJ-f1-PEe"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="GJK-1r-Qfe">
+                                <rect key="frame" x="176" y="556" width="23" height="37"/>
+                            </pageControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vug-6F-bhD">
+                                <rect key="frame" x="0.0" y="208.5" width="375" height="337.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vug-6F-bhD" secondAttribute="height" multiplier="1:0.9" id="uf0-Hj-oHv"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fq8-Oq-ifZ">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 / 3" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTL-tK-8Ou">
+                                <rect key="frame" x="102.5" y="170.5" width="29.5" height="18"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FmM-np-Vmp" firstAttribute="top" secondItem="sUb-g9-3Ec" secondAttribute="top" id="15o-kI-ana"/>
+                            <constraint firstItem="kZi-RN-ZLj" firstAttribute="bottom" secondItem="die-F4-a3j" secondAttribute="bottom" constant="30" id="3dc-A3-4pw"/>
+                            <constraint firstItem="nWX-sj-Pn9" firstAttribute="leading" secondItem="kZi-RN-ZLj" secondAttribute="leading" constant="20" id="5z9-Bc-TlH"/>
+                            <constraint firstItem="vug-6F-bhD" firstAttribute="leading" secondItem="kZi-RN-ZLj" secondAttribute="leading" id="67N-GK-MKf"/>
+                            <constraint firstItem="nTL-tK-8Ou" firstAttribute="leading" secondItem="uit-mg-m1V" secondAttribute="trailing" constant="5" id="95L-ID-Wc3"/>
+                            <constraint firstItem="GJK-1r-Qfe" firstAttribute="top" secondItem="vug-6F-bhD" secondAttribute="bottom" constant="10" id="Aqi-6O-rsK"/>
+                            <constraint firstItem="FmM-np-Vmp" firstAttribute="leading" secondItem="kZi-RN-ZLj" secondAttribute="leading" id="ETx-zn-Vie"/>
+                            <constraint firstItem="vug-6F-bhD" firstAttribute="top" secondItem="uit-mg-m1V" secondAttribute="bottom" constant="20" id="HmH-uJ-Qev"/>
+                            <constraint firstItem="kZi-RN-ZLj" firstAttribute="trailing" secondItem="FmM-np-Vmp" secondAttribute="trailing" id="Imm-be-d93"/>
+                            <constraint firstItem="die-F4-a3j" firstAttribute="centerX" secondItem="sUb-g9-3Ec" secondAttribute="centerX" id="OM7-ZL-gut"/>
+                            <constraint firstItem="kZi-RN-ZLj" firstAttribute="trailing" secondItem="vug-6F-bhD" secondAttribute="trailing" id="P51-xs-j37"/>
+                            <constraint firstItem="kZi-RN-ZLj" firstAttribute="trailing" secondItem="yYV-ei-7N8" secondAttribute="trailing" constant="20" id="TXo-Nc-OVE"/>
+                            <constraint firstItem="IeR-o3-WLQ" firstAttribute="top" secondItem="nWX-sj-Pn9" secondAttribute="bottom" constant="10" id="W1k-g1-6qm"/>
+                            <constraint firstItem="uit-mg-m1V" firstAttribute="top" secondItem="IeR-o3-WLQ" secondAttribute="bottom" constant="15" id="Xyr-8J-gUb"/>
+                            <constraint firstItem="nTL-tK-8Ou" firstAttribute="centerY" secondItem="uit-mg-m1V" secondAttribute="centerY" id="YPg-zS-ozU"/>
+                            <constraint firstItem="nWX-sj-Pn9" firstAttribute="top" secondItem="yYV-ei-7N8" secondAttribute="bottom" constant="15" id="dpW-Om-ssm"/>
+                            <constraint firstAttribute="bottom" secondItem="FmM-np-Vmp" secondAttribute="bottom" id="exo-70-PQL"/>
+                            <constraint firstItem="die-F4-a3j" firstAttribute="width" secondItem="sUb-g9-3Ec" secondAttribute="width" multiplier="0.33" id="keS-dg-gyr"/>
+                            <constraint firstItem="uit-mg-m1V" firstAttribute="leading" secondItem="nWX-sj-Pn9" secondAttribute="leading" id="ndz-Kr-jqF"/>
+                            <constraint firstItem="IeR-o3-WLQ" firstAttribute="leading" secondItem="nWX-sj-Pn9" secondAttribute="leading" id="nkY-IG-5VM"/>
+                            <constraint firstItem="GJK-1r-Qfe" firstAttribute="centerX" secondItem="sUb-g9-3Ec" secondAttribute="centerX" id="qlt-ui-xen"/>
+                            <constraint firstItem="yYV-ei-7N8" firstAttribute="top" secondItem="kZi-RN-ZLj" secondAttribute="top" constant="20" id="xJd-GT-YZX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kZi-RN-ZLj"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonNext" destination="die-F4-a3j" id="KZw-SF-GHK"/>
+                        <outlet property="collectionViewCategory" destination="vug-6F-bhD" id="pAJ-cR-CkL"/>
+                        <outlet property="labelSelected" destination="nTL-tK-8Ou" id="MHF-ub-w2C"/>
+                        <outlet property="pageControl" destination="GJK-1r-Qfe" id="8vG-1e-Xt7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kw0-jt-j5X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="19"/>
+        </scene>
+        <!--Select OptionsVC-->
+        <scene sceneID="q1m-hd-q4B">
+            <objects>
+                <viewController storyboardIdentifier="SelectOptionsVC" id="Far-T4-Obh" customClass="SelectOptionsVC" customModule="Verkoop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tYC-Ma-cJO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pick_option" translatesAutoresizingMaskIntoConstraints="NO" id="ccq-JK-3Rp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick any" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4H-L7-0HK">
+                                <rect key="frame" x="20" y="90" width="139" height="20"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Option" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI7-FQ-G0f">
+                                <rect key="frame" x="18" y="110" width="141" height="31"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ak-43-BgU">
+                                <rect key="frame" x="22" y="562" width="331" height="50"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.13725490200000001" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="X6h-w4-5fy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                                <state key="normal" title="MAYBE LATER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonLaterTappedWithSender:" destination="Far-T4-Obh" eventType="touchUpInside" id="Mhi-ZM-KRg"/>
+                                    <action selector="buttonNextTappedWithSender:" destination="Bsl-kJ-5Tg" eventType="touchUpInside" id="CM7-I4-sJp"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3W-T3-aly">
+                                <rect key="frame" x="0.0" y="110" width="375" height="452"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tB3-Rz-kVG">
+                                        <rect key="frame" x="0.0" y="143" width="375" height="166"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soX-A8-ph1">
+                                                <rect key="frame" x="22" y="94" width="331" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ixi-TZ-CPi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                                                <state key="normal" title="SHOP NOW">
+                                                    <color key="titleColor" red="0.90196078430000004" green="0.13725490200000001" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonNextTappedWithSender:" destination="Bsl-kJ-5Tg" eventType="touchUpInside" id="obX-gf-7HE"/>
+                                                    <action selector="buttonShopTappedWithSender:" destination="Far-T4-Obh" eventType="touchUpInside" id="JRn-qt-siP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rd2-aX-pmu">
+                                                <rect key="frame" x="22" y="22" width="331" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gyO-1P-Fcw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                                                <state key="normal" title="SELL NOW">
+                                                    <color key="titleColor" red="0.90196078430000004" green="0.13725490200000001" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonNextTappedWithSender:" destination="Bsl-kJ-5Tg" eventType="touchUpInside" id="XQ8-Zf-ePF"/>
+                                                    <action selector="buttonSellTappedWithSender:" destination="Far-T4-Obh" eventType="touchUpInside" id="IkY-OI-Z8p"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="soX-A8-ph1" firstAttribute="top" secondItem="Rd2-aX-pmu" secondAttribute="bottom" constant="22" id="Ofs-mp-wdw"/>
+                                            <constraint firstItem="Rd2-aX-pmu" firstAttribute="leading" secondItem="tB3-Rz-kVG" secondAttribute="leading" constant="22" id="PIW-PK-75x"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rd2-aX-pmu" secondAttribute="trailing" constant="22" id="jVN-gF-FiB"/>
+                                            <constraint firstItem="Rd2-aX-pmu" firstAttribute="top" secondItem="tB3-Rz-kVG" secondAttribute="top" constant="22" id="nm9-4P-1SV"/>
+                                            <constraint firstAttribute="bottom" secondItem="soX-A8-ph1" secondAttribute="bottom" constant="22" id="s89-9V-DGl"/>
+                                            <constraint firstItem="soX-A8-ph1" firstAttribute="leading" secondItem="tB3-Rz-kVG" secondAttribute="leading" constant="22" id="ugB-Mf-JgM"/>
+                                            <constraint firstAttribute="trailing" secondItem="soX-A8-ph1" secondAttribute="trailing" constant="22" id="ykR-i9-TmI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tB3-Rz-kVG" secondAttribute="trailing" id="3tz-dX-qCW"/>
+                                    <constraint firstItem="tB3-Rz-kVG" firstAttribute="leading" secondItem="O3W-T3-aly" secondAttribute="leading" id="KLt-YR-39d"/>
+                                    <constraint firstItem="tB3-Rz-kVG" firstAttribute="centerY" secondItem="O3W-T3-aly" secondAttribute="centerY" id="Z9h-Tu-GPi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ccq-JK-3Rp" firstAttribute="top" secondItem="tYC-Ma-cJO" secondAttribute="top" id="3Gk-uW-U1G"/>
+                            <constraint firstItem="ccq-JK-3Rp" firstAttribute="trailing" secondItem="yIJ-zO-96b" secondAttribute="trailing" id="4iu-AC-Q4U"/>
+                            <constraint firstItem="E4H-L7-0HK" firstAttribute="top" secondItem="yIJ-zO-96b" secondAttribute="top" constant="70" id="58e-2p-Ay1"/>
+                            <constraint firstItem="ccq-JK-3Rp" firstAttribute="bottom" secondItem="tYC-Ma-cJO" secondAttribute="bottom" id="9Mj-6T-WNh"/>
+                            <constraint firstItem="yIJ-zO-96b" firstAttribute="bottom" secondItem="7Ak-43-BgU" secondAttribute="bottom" constant="55" id="JAH-gW-x2y"/>
+                            <constraint firstItem="wI7-FQ-G0f" firstAttribute="leading" secondItem="E4H-L7-0HK" secondAttribute="leading" constant="-2" id="KZq-9t-gg5"/>
+                            <constraint firstItem="E4H-L7-0HK" firstAttribute="leading" secondItem="yIJ-zO-96b" secondAttribute="leading" constant="20" id="PJl-B2-cju"/>
+                            <constraint firstItem="7Ak-43-BgU" firstAttribute="leading" secondItem="yIJ-zO-96b" secondAttribute="leading" constant="22" id="U9P-e9-aTu"/>
+                            <constraint firstItem="O3W-T3-aly" firstAttribute="leading" secondItem="tYC-Ma-cJO" secondAttribute="leading" id="YXV-ac-fnW"/>
+                            <constraint firstItem="yIJ-zO-96b" firstAttribute="trailing" secondItem="7Ak-43-BgU" secondAttribute="trailing" constant="22" id="cbh-rd-y72"/>
+                            <constraint firstAttribute="trailing" secondItem="O3W-T3-aly" secondAttribute="trailing" id="f7l-ZS-l6L"/>
+                            <constraint firstItem="ccq-JK-3Rp" firstAttribute="leading" secondItem="yIJ-zO-96b" secondAttribute="leading" id="jOG-zX-kiQ"/>
+                            <constraint firstItem="wI7-FQ-G0f" firstAttribute="trailing" secondItem="E4H-L7-0HK" secondAttribute="trailing" id="jdE-92-hau"/>
+                            <constraint firstItem="wI7-FQ-G0f" firstAttribute="top" secondItem="E4H-L7-0HK" secondAttribute="bottom" id="oZH-53-c4W"/>
+                            <constraint firstItem="7Ak-43-BgU" firstAttribute="top" secondItem="O3W-T3-aly" secondAttribute="bottom" id="r7a-KB-4jz"/>
+                            <constraint firstItem="7Ak-43-BgU" firstAttribute="centerX" secondItem="tYC-Ma-cJO" secondAttribute="centerX" id="rzL-4z-sdL"/>
+                            <constraint firstItem="O3W-T3-aly" firstAttribute="top" secondItem="E4H-L7-0HK" secondAttribute="bottom" id="xRU-Fu-sVe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yIJ-zO-96b"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLater" destination="7Ak-43-BgU" id="1Rl-vG-4q8"/>
+                        <outlet property="buttonSell" destination="Rd2-aX-pmu" id="ioO-Wc-3wy"/>
+                        <outlet property="buttonShop" destination="soX-A8-ph1" id="fWX-DM-PYn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="piI-UB-wtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="13"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pick_option" width="375" height="667"/>
+    </resources>
+</document>

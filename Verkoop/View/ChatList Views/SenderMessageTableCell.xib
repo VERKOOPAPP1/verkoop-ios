@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHIC.TTF">
+            <string>CenturyGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SenderMessageTableCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SenderMessageTableCell" rowHeight="94" id="ARi-A2-kCi" customClass="SenderMessageTableCell" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ARi-A2-kCi" id="mgP-l4-Plh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YL7-7K-MBk">
+                        <rect key="frame" x="111.5" y="8" width="198.5" height="77.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello , how's going are u all alright" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaP-HS-1R3">
+                                <rect key="frame" x="6" y="6" width="186.5" height="45.5"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="11:53 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vF-wQ-1Jv">
+                                <rect key="frame" x="6" y="55.5" width="186.5" height="16"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80392156862745101" green="0.92549019607843142" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="3yv-kz-j7M"/>
+                            <constraint firstItem="6vF-wQ-1Jv" firstAttribute="leading" secondItem="YL7-7K-MBk" secondAttribute="leading" constant="6" id="Mib-do-eFp"/>
+                            <constraint firstItem="aaP-HS-1R3" firstAttribute="top" secondItem="YL7-7K-MBk" secondAttribute="top" constant="6" id="a8Z-Ae-Cr0"/>
+                            <constraint firstAttribute="trailing" secondItem="aaP-HS-1R3" secondAttribute="trailing" constant="6" id="akI-rj-bN0"/>
+                            <constraint firstItem="6vF-wQ-1Jv" firstAttribute="top" secondItem="aaP-HS-1R3" secondAttribute="bottom" constant="4" id="bXe-BQ-9qP"/>
+                            <constraint firstItem="aaP-HS-1R3" firstAttribute="leading" secondItem="YL7-7K-MBk" secondAttribute="leading" constant="6" id="c1u-L2-azM"/>
+                            <constraint firstAttribute="trailing" secondItem="6vF-wQ-1Jv" secondAttribute="trailing" constant="6" id="xM5-t5-tqb"/>
+                            <constraint firstAttribute="bottom" secondItem="6vF-wQ-1Jv" secondAttribute="bottom" constant="6" id="yhx-bb-3fY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="YL7-7K-MBk" firstAttribute="top" secondItem="mgP-l4-Plh" secondAttribute="top" constant="8" id="BjE-Lx-yNc"/>
+                    <constraint firstItem="YL7-7K-MBk" firstAttribute="width" relation="lessThanOrEqual" secondItem="mgP-l4-Plh" secondAttribute="width" multiplier="0.62" id="EKD-Sh-rgM"/>
+                    <constraint firstAttribute="bottom" secondItem="YL7-7K-MBk" secondAttribute="bottom" constant="8" id="Wxc-yY-SvR"/>
+                    <constraint firstAttribute="trailing" secondItem="YL7-7K-MBk" secondAttribute="trailing" constant="10" id="xAd-lX-08U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="YL7-7K-MBk" id="ihG-sy-jTy"/>
+                <outlet property="messageLabel" destination="aaP-HS-1R3" id="Pqb-yB-WM4"/>
+                <outlet property="timeLabel" destination="6vF-wQ-1Jv" id="oD6-pr-IZe"/>
+            </connections>
+            <point key="canvasLocation" x="62.318840579710148" y="46.205357142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

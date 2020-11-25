@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SelectCategoryCollectionCell" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="101"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quS-zM-QLz">
+                        <rect key="frame" x="5" y="5" width="132" height="91"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOB-cn-Ohp">
+                                <rect key="frame" x="3" y="3" width="126" height="85"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="men's" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBP-Cf-uYr">
+                                <rect key="frame" x="5" y="56.5" width="122" height="29.5"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="women_selected" translatesAutoresizingMaskIntoConstraints="NO" id="sHY-zr-k1c">
+                                <rect key="frame" x="48" y="20" width="36" height="36.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sHY-zr-k1c" secondAttribute="height" multiplier="1:1" id="Edp-uG-iho"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WOB-cn-Ohp" secondAttribute="bottom" constant="3" id="1om-dZ-c6k"/>
+                            <constraint firstAttribute="bottom" secondItem="CBP-Cf-uYr" secondAttribute="bottom" constant="5" id="558-nb-MV2"/>
+                            <constraint firstAttribute="trailing" secondItem="WOB-cn-Ohp" secondAttribute="trailing" constant="3" id="Bn1-IS-qv7"/>
+                            <constraint firstItem="CBP-Cf-uYr" firstAttribute="leading" secondItem="quS-zM-QLz" secondAttribute="leading" constant="5" id="CHk-Tg-eII"/>
+                            <constraint firstItem="WOB-cn-Ohp" firstAttribute="leading" secondItem="quS-zM-QLz" secondAttribute="leading" constant="3" id="EJL-Bs-SGO"/>
+                            <constraint firstItem="sHY-zr-k1c" firstAttribute="top" secondItem="quS-zM-QLz" secondAttribute="top" constant="20" id="HRH-Z9-vh6"/>
+                            <constraint firstItem="WOB-cn-Ohp" firstAttribute="top" secondItem="quS-zM-QLz" secondAttribute="top" constant="3" id="TZq-1B-azq"/>
+                            <constraint firstItem="sHY-zr-k1c" firstAttribute="centerX" secondItem="quS-zM-QLz" secondAttribute="centerX" id="jEU-jB-YAo"/>
+                            <constraint firstItem="CBP-Cf-uYr" firstAttribute="top" secondItem="sHY-zr-k1c" secondAttribute="bottom" id="mf9-iS-6Ke"/>
+                            <constraint firstAttribute="trailing" secondItem="CBP-Cf-uYr" secondAttribute="trailing" constant="5" id="nTj-7j-oCj"/>
+                            <constraint firstItem="sHY-zr-k1c" firstAttribute="height" secondItem="quS-zM-QLz" secondAttribute="height" multiplier="0.4" id="yuo-IT-6Xw"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selet" translatesAutoresizingMaskIntoConstraints="NO" id="TGE-Ns-cJ7">
+                        <rect key="frame" x="117" y="0.0" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="TGE-Ns-cJ7" secondAttribute="height" multiplier="1:1" id="JqA-ig-vZK"/>
+                            <constraint firstAttribute="width" constant="25" id="SIE-3x-bk7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="TGE-Ns-cJ7" firstAttribute="top" secondItem="quS-zM-QLz" secondAttribute="top" constant="-5" id="1ic-Qr-e5a"/>
+                <constraint firstItem="TGE-Ns-cJ7" firstAttribute="trailing" secondItem="quS-zM-QLz" secondAttribute="trailing" constant="5" id="KWO-Eu-rvP"/>
+                <constraint firstItem="quS-zM-QLz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="PJQ-W4-5Sc"/>
+                <constraint firstAttribute="trailing" secondItem="quS-zM-QLz" secondAttribute="trailing" constant="5" id="UNy-Jf-1Tx"/>
+                <constraint firstAttribute="bottom" secondItem="quS-zM-QLz" secondAttribute="bottom" constant="5" id="hR6-S7-ifG"/>
+                <constraint firstItem="quS-zM-QLz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="vtT-rg-psS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="142" height="101"/>
+            <connections>
+                <outlet property="imageViewCategory" destination="sHY-zr-k1c" id="1rw-D1-KaZ"/>
+                <outlet property="imageViewCheck" destination="TGE-Ns-cJ7" id="4uU-mH-31c"/>
+                <outlet property="labelCategory" destination="CBP-Cf-uYr" id="3vI-Ug-gLV"/>
+                <outlet property="viewInner" destination="WOB-cn-Ohp" id="D4x-eZ-GIb"/>
+                <outlet property="viewOuter" destination="quS-zM-QLz" id="igW-sl-E5z"/>
+            </connections>
+            <point key="canvasLocation" x="206.40000000000001" y="129.08545727136433"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="selet" width="21" height="21"/>
+        <image name="women_selected" width="20.5" height="27.5"/>
+    </resources>
+</document>

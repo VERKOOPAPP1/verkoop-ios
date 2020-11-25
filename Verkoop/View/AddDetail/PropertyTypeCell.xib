@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PropertyTypeCell" rowHeight="149" id="KGk-i7-Jjw" customClass="PropertyTypeCell" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="148.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goP-qF-Ipg">
+                        <rect key="frame" x="20" y="16" width="113.5" height="50"/>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="z0C-qI-Mse"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                        <state key="normal" title="House">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="propertyButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DVb-I2-65i"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg8-rV-aVZ">
+                        <rect key="frame" x="149.5" y="16" width="114" height="50"/>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                        <state key="normal" title="Flat">
+                            <color key="titleColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="propertyButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bVW-Yx-FpK"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHE-jn-pwW">
+                        <rect key="frame" x="279.5" y="16" width="113.5" height="50"/>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                        <state key="normal" title="Townhouse">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="propertyButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dW9-LL-liv"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IB-UL-3T4">
+                        <rect key="frame" x="20" y="81.5" width="113.5" height="50"/>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                        <state key="normal" title="Land">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="propertyButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Drr-FB-n6O"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdZ-6U-ZKX">
+                        <rect key="frame" x="8" y="147.5" width="389" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JxS-Ol-28X"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXk-9u-Q2O">
+                        <rect key="frame" x="149.5" y="81.5" width="114" height="50"/>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                        <state key="normal" title="Farm">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="propertyButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="P0I-pI-obW"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AdZ-6U-ZKX" firstAttribute="top" secondItem="SXk-9u-Q2O" secondAttribute="bottom" constant="16" id="A1b-gk-VMX"/>
+                    <constraint firstItem="AdZ-6U-ZKX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Ba3-31-tyh"/>
+                    <constraint firstItem="goP-qF-Ipg" firstAttribute="width" secondItem="Sg8-rV-aVZ" secondAttribute="width" id="GRe-8Y-VC5"/>
+                    <constraint firstItem="SXk-9u-Q2O" firstAttribute="leading" secondItem="4IB-UL-3T4" secondAttribute="trailing" constant="16" id="IfO-Q5-fSa"/>
+                    <constraint firstItem="goP-qF-Ipg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="KP5-7S-KHg"/>
+                    <constraint firstItem="GHE-jn-pwW" firstAttribute="leading" secondItem="Sg8-rV-aVZ" secondAttribute="trailing" constant="16" id="Q1f-fV-Us0"/>
+                    <constraint firstItem="Sg8-rV-aVZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="RZ3-vY-CGT"/>
+                    <constraint firstItem="goP-qF-Ipg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="WnR-81-uEF"/>
+                    <constraint firstAttribute="bottom" secondItem="AdZ-6U-ZKX" secondAttribute="bottom" id="Wq1-Kg-lRx"/>
+                    <constraint firstItem="Sg8-rV-aVZ" firstAttribute="leading" secondItem="goP-qF-Ipg" secondAttribute="trailing" constant="16" id="YiS-cu-AEP"/>
+                    <constraint firstItem="goP-qF-Ipg" firstAttribute="height" secondItem="Sg8-rV-aVZ" secondAttribute="height" id="ZQq-EL-eMw"/>
+                    <constraint firstItem="GHE-jn-pwW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="feH-D2-4bi"/>
+                    <constraint firstAttribute="trailing" secondItem="GHE-jn-pwW" secondAttribute="trailing" constant="20" id="isu-sf-nuW"/>
+                    <constraint firstItem="SXk-9u-Q2O" firstAttribute="height" secondItem="4IB-UL-3T4" secondAttribute="height" id="jrG-8d-QLo"/>
+                    <constraint firstItem="SXk-9u-Q2O" firstAttribute="width" secondItem="4IB-UL-3T4" secondAttribute="width" id="mDO-zI-PlD"/>
+                    <constraint firstItem="Sg8-rV-aVZ" firstAttribute="width" secondItem="GHE-jn-pwW" secondAttribute="width" id="ovh-O4-yXh"/>
+                    <constraint firstItem="4IB-UL-3T4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pTP-0Q-GQr"/>
+                    <constraint firstItem="4IB-UL-3T4" firstAttribute="height" secondItem="goP-qF-Ipg" secondAttribute="height" id="uRP-sj-U0e"/>
+                    <constraint firstItem="Sg8-rV-aVZ" firstAttribute="height" secondItem="GHE-jn-pwW" secondAttribute="height" id="v60-5g-vc5"/>
+                    <constraint firstItem="4IB-UL-3T4" firstAttribute="width" secondItem="goP-qF-Ipg" secondAttribute="width" id="zEZ-wa-gqd"/>
+                    <constraint firstItem="AdZ-6U-ZKX" firstAttribute="top" secondItem="4IB-UL-3T4" secondAttribute="bottom" constant="16" id="zIs-n9-I20"/>
+                    <constraint firstAttribute="trailing" secondItem="AdZ-6U-ZKX" secondAttribute="trailing" constant="16" id="zbc-Nn-kAd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outletCollection property="propertyTypeButton" destination="goP-qF-Ipg" collectionClass="NSMutableArray" id="aZS-zt-J8o"/>
+                <outletCollection property="propertyTypeButton" destination="Sg8-rV-aVZ" collectionClass="NSMutableArray" id="Yad-gA-CpP"/>
+                <outletCollection property="propertyTypeButton" destination="GHE-jn-pwW" collectionClass="NSMutableArray" id="74o-WT-2ah"/>
+                <outletCollection property="propertyTypeButton" destination="4IB-UL-3T4" collectionClass="NSMutableArray" id="BKy-k4-Is5"/>
+                <outletCollection property="propertyTypeButton" destination="SXk-9u-Q2O" collectionClass="NSMutableArray" id="brP-xc-46S"/>
+            </connections>
+            <point key="canvasLocation" x="205.07246376811597" y="174.44196428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

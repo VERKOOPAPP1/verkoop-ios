@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHIC.TTF">
+            <string>CenturyGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AllCategoryHorizontalCell" id="Jnd-No-HaI" customClass="AllCategoryHorizontalCell" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="272" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="y1D-YU-w3L">
+                        <rect key="frame" x="8" y="35" width="256" height="78"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="2" minimumInteritemSpacing="0.0" id="YkD-A6-M7t">
+                            <size key="itemSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OsG-hm-OBF">
+                        <rect key="frame" x="0.0" y="115" width="272" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="428-bK-pd6"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Men's Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li7-W3-d4P">
+                        <rect key="frame" x="10" y="8" width="143" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="h2c-q1-dkS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="y1D-YU-w3L" secondAttribute="trailing" constant="8" id="08Q-ve-6bR"/>
+                <constraint firstItem="OsG-hm-OBF" firstAttribute="leading" secondItem="Jnd-No-HaI" secondAttribute="leading" id="0iD-sd-9J7"/>
+                <constraint firstItem="li7-W3-d4P" firstAttribute="top" secondItem="Jnd-No-HaI" secondAttribute="top" constant="8" id="2ae-wx-XHd"/>
+                <constraint firstItem="y1D-YU-w3L" firstAttribute="top" secondItem="li7-W3-d4P" secondAttribute="bottom" id="DcZ-cu-QzR"/>
+                <constraint firstItem="li7-W3-d4P" firstAttribute="leading" secondItem="Jnd-No-HaI" secondAttribute="leading" constant="10" id="MXb-cY-9WM"/>
+                <constraint firstAttribute="bottom" secondItem="OsG-hm-OBF" secondAttribute="bottom" id="bhZ-Ok-2ui"/>
+                <constraint firstItem="OsG-hm-OBF" firstAttribute="top" secondItem="y1D-YU-w3L" secondAttribute="bottom" constant="2" id="fUz-b1-9zE"/>
+                <constraint firstAttribute="trailing" secondItem="OsG-hm-OBF" secondAttribute="trailing" id="gWd-85-r2A"/>
+                <constraint firstItem="y1D-YU-w3L" firstAttribute="leading" secondItem="Jnd-No-HaI" secondAttribute="leading" constant="8" id="pbp-S7-Icw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="wIf-eR-1CT"/>
+            <size key="customSize" width="272" height="116"/>
+            <connections>
+                <outlet property="categoryNameLabel" destination="li7-W3-d4P" id="Rgc-of-8OK"/>
+                <outlet property="collectionView" destination="y1D-YU-w3L" id="wOs-bu-chr"/>
+            </connections>
+            <point key="canvasLocation" x="118.40000000000001" y="43.178410794602705"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdsCollectionCell" id="gTV-IL-0wX" customClass="AdsCollectionCell" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="139" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="139" height="102"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TV1-ss-buB">
+                        <rect key="frame" x="0.0" y="0.0" width="139" height="102"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ggO-Z3-6WL">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="zk4-Dr-2M3">
+                        <rect key="frame" x="34" y="65" width="71" height="37"/>
+                        <color key="currentPageIndicatorTintColor" red="0.75294117647058822" green="0.22352941176470587" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </pageControl>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zk4-Dr-2M3" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="0g1-ko-iZ6"/>
+                <constraint firstAttribute="bottom" secondItem="TV1-ss-buB" secondAttribute="bottom" id="RTQ-eD-aLj"/>
+                <constraint firstItem="TV1-ss-buB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mqb-RJ-Itm"/>
+                <constraint firstAttribute="trailing" secondItem="TV1-ss-buB" secondAttribute="trailing" id="oVt-Tk-SdP"/>
+                <constraint firstItem="TV1-ss-buB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wEs-2B-Quc"/>
+                <constraint firstAttribute="bottom" secondItem="zk4-Dr-2M3" secondAttribute="bottom" id="yeq-26-vgl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="139" height="102"/>
+            <connections>
+                <outlet property="collectionViewAds" destination="TV1-ss-buB" id="MV4-x6-ngg"/>
+                <outlet property="pageControl" destination="zk4-Dr-2M3" id="on5-sB-8eM"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="149.32533733133434"/>
+        </collectionViewCell>
+    </objects>
+</document>

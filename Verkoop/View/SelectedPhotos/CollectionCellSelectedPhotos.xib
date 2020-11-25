@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCellSelectedPhotos" id="gTV-IL-0wX" customClass="CollectionCellSelectedPhotos" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="152"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uuv-7q-k3z">
+                        <rect key="frame" x="5" y="5" width="181" height="142"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqd-WI-Ix8">
+                        <rect key="frame" x="158" y="3" width="30" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcD-eJ-R72">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.13725490200000001" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="DYD-D8-udh"/>
+                            <constraint firstAttribute="trailing" secondItem="kcD-eJ-R72" secondAttribute="trailing" id="Dwq-TA-YXR"/>
+                            <constraint firstItem="kcD-eJ-R72" firstAttribute="leading" secondItem="hqd-WI-Ix8" secondAttribute="leading" id="NQN-GR-uir"/>
+                            <constraint firstAttribute="bottom" secondItem="kcD-eJ-R72" secondAttribute="bottom" id="Ozz-aD-BWT"/>
+                            <constraint firstAttribute="width" constant="30" id="UqS-Hj-8qX"/>
+                            <constraint firstItem="kcD-eJ-R72" firstAttribute="top" secondItem="hqd-WI-Ix8" secondAttribute="top" id="wgX-iL-pqF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="uuv-7q-k3z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="9x6-q7-ck6"/>
+                <constraint firstItem="hqd-WI-Ix8" firstAttribute="trailing" secondItem="uuv-7q-k3z" secondAttribute="trailing" constant="2" id="BIk-Kf-0Nz"/>
+                <constraint firstItem="uuv-7q-k3z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Feb-e1-MU0"/>
+                <constraint firstAttribute="bottom" secondItem="uuv-7q-k3z" secondAttribute="bottom" constant="5" id="VsZ-o9-GEg"/>
+                <constraint firstItem="hqd-WI-Ix8" firstAttribute="top" secondItem="uuv-7q-k3z" secondAttribute="top" constant="-2" id="hRa-4z-iu6"/>
+                <constraint firstAttribute="trailing" secondItem="uuv-7q-k3z" secondAttribute="trailing" constant="5" id="rxX-Zc-jjQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="191" height="152"/>
+            <connections>
+                <outlet property="imageSelectedPhoto" destination="uuv-7q-k3z" id="kvt-uC-fR2"/>
+                <outlet property="labelCount" destination="kcD-eJ-R72" id="PMo-gv-Zr7"/>
+                <outlet property="viewCount" destination="hqd-WI-Ix8" id="HGZ-0p-AL8"/>
+            </connections>
+            <point key="canvasLocation" x="136.80000000000001" y="191.6041979010495"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GOTHIC.TTF">
+            <string>CenturyGothic</string>
+        </array>
+        <array key="GOTHICB.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SenderMessageTableCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SenderOfferTableCell" rowHeight="133" id="aQJ-8j-Xav" customClass="SenderOfferTableCell" customModule="Verkoop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aQJ-8j-Xav" id="kzj-pa-EB8">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="132.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTP-GM-D0G">
+                        <rect key="frame" x="168.5" y="8" width="141.5" height="116.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Made an Offer  " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mD1-It-1n0">
+                                <rect key="frame" x="6" y="6" width="129.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cq7-fI-d5h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$129890" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2F-WQ-Qei">
+                                <rect key="frame" x="10" y="42" width="125.5" height="48.5"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="11:53 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUv-ej-rq6">
+                                <rect key="frame" x="6" y="94.5" width="129.5" height="16"/>
+                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80392156859999997" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZUv-ej-rq6" firstAttribute="leading" secondItem="sTP-GM-D0G" secondAttribute="leading" constant="6" id="2Wa-RX-E3t"/>
+                            <constraint firstItem="o2F-WQ-Qei" firstAttribute="leading" secondItem="sTP-GM-D0G" secondAttribute="leading" constant="10" id="7LF-Sb-zlT"/>
+                            <constraint firstItem="o2F-WQ-Qei" firstAttribute="top" secondItem="mD1-It-1n0" secondAttribute="bottom" constant="6" id="ADq-fl-d30"/>
+                            <constraint firstItem="mD1-It-1n0" firstAttribute="leading" secondItem="sTP-GM-D0G" secondAttribute="leading" constant="6" id="HyS-6X-izE"/>
+                            <constraint firstAttribute="trailing" secondItem="o2F-WQ-Qei" secondAttribute="trailing" constant="6" id="UaM-4z-SJo"/>
+                            <constraint firstAttribute="bottom" secondItem="ZUv-ej-rq6" secondAttribute="bottom" constant="6" id="ZoM-T8-YPp"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="eXq-YJ-xVj"/>
+                            <constraint firstItem="mD1-It-1n0" firstAttribute="top" secondItem="sTP-GM-D0G" secondAttribute="top" constant="6" id="gnz-t3-hrf"/>
+                            <constraint firstItem="ZUv-ej-rq6" firstAttribute="top" secondItem="o2F-WQ-Qei" secondAttribute="bottom" constant="4" id="kQ6-Ma-vge"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUv-ej-rq6" secondAttribute="trailing" constant="6" id="rtn-Kb-Mah"/>
+                            <constraint firstAttribute="trailing" secondItem="mD1-It-1n0" secondAttribute="trailing" constant="6" id="ueZ-pw-5m0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="sTP-GM-D0G" firstAttribute="width" relation="lessThanOrEqual" secondItem="kzj-pa-EB8" secondAttribute="width" multiplier="0.62" id="JQu-mo-it6"/>
+                    <constraint firstAttribute="bottom" secondItem="sTP-GM-D0G" secondAttribute="bottom" constant="8" id="Ofk-ha-Szk"/>
+                    <constraint firstItem="sTP-GM-D0G" firstAttribute="top" secondItem="kzj-pa-EB8" secondAttribute="top" constant="8" id="mIb-fn-9F1"/>
+                    <constraint firstAttribute="trailing" secondItem="sTP-GM-D0G" secondAttribute="trailing" constant="10" id="naq-Ea-ecT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="sTP-GM-D0G" id="AIL-WN-9Oq"/>
+                <outlet property="messageLabel" destination="o2F-WQ-Qei" id="1Ix-Bc-NsP"/>
+                <outlet property="offerTitleLabel" destination="mD1-It-1n0" id="HhQ-b4-sF3"/>
+                <outlet property="timeLabel" destination="ZUv-ej-rq6" id="Mtn-ij-vY1"/>
+            </connections>
+            <point key="canvasLocation" x="62.318840579710148" y="58.59375"/>
+        </tableViewCell>
+    </objects>
+</document>
